@@ -10,7 +10,23 @@ import {
 } from "./HeroStyles";
 
 const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <HeroSection>
+      <HeroVideo src="./assets/hero.mp4" autoPlay loop muted />
+      <Container>
+        <MainHeading>Your data is secure with us</MainHeading>
+        <HeroText>
+          Providing the Best Security Systems for clients all over the world
+        </HeroText>
+        <ButtonWrapper>
+          <Link to="/signup">
+            <Button>Get Started</Button>
+          </Link>
+          <HeroButton>Find More</HeroButton>
+        </ButtonWrapper>
+      </Container>
+    </HeroSection>
+  );
 };
 
 export default Hero;

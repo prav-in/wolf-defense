@@ -1,7 +1,14 @@
 import React from "react";
+import { Container, Heading } from "../GlobalStyles";
 
 const PricingPage = () => {
-  return <div>Pricing Page</div>;
+  return (
+    <Container>
+      <Heading inverse="true" mt="300px">
+        Pricing Page
+      </Heading>
+    </Container>
+  );
 };
 
 export default PricingPage;
